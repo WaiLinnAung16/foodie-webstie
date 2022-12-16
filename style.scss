@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+$font-family-sans-serif:'Montserrat', sans-serif;
+$primary:#007822;
+
+$nav-pills-link-active-bg: $primary;
+$navbar-nav-link-padding-x: 1.5rem;
+
+@import "./node_modules/bootstrap/scss/bootstrap.scss";
+@import "./node_modules/bootstrap-icons/font/bootstrap-icons.css";
+
+.nav-link.active{
+  color: white  !important;
+}
+.logo{
+  transition: 0.6s;
+}
+.logo-container{
+  transition: transform .6s;
+  &:hover .logo{
+  transform: rotate(360deg);
+
+  }
+}
+// .logo-container:hover .logo{
+//   transform: rotate(360deg);
+// }
+
+.img{
+  width: 70%;
+}
