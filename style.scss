@@ -7,6 +7,7 @@ $nav-pills-link-active-bg: $primary;
 $navbar-nav-link-padding-x: 1.5rem;
 
 $btn-padding-x: 1.5rem;
+$btn-padding-y: 0.625rem;
 
 @import "./node_modules/bootstrap/scss/bootstrap.scss";
 @import "./node_modules/bootstrap-icons/font/bootstrap-icons.css";
@@ -28,5 +29,19 @@ $btn-padding-x: 1.5rem;
 // }
 
 .img {
-  width: 70%;
+  width: 80%;
+}
+
+.card_border{
+  transition: all .6s;
+  .card_img{
+    transition: transform .6s;
+  }
+  &:hover{
+    transform: translateY(-10px);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  &:hover .card_img{
+    transform: rotate(180deg);
+  }
 }

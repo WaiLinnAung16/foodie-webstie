@@ -30,35 +30,35 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
+              <a class="nav-link active" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+              <a class="nav-link" href="#sevices">Services</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Menu</a>
+              <a class="nav-link" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Conact</a>
+              <a class="nav-link" href="#contact">Conact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-    <section class="container">
+    <section class="container" id="home">
       <div class="row justify-content-between align-items-center min-vh-100">
         <div class="col col-lg-5 top_down">
-          <h1 class="display-4 fw-bold text-primary mb-2">Tasty Food...</h1>
-          <p class="text-black-50 small">
+          <h1 class="display-4 fw-bold text-primary mb-2">Tasty <span id="type"></span></h1>
+          <p class="text-black-50 small mb-2">
             Lorem ipsum dolor sit amet consectetur repellat maxime
             exercitationem, sed, rerum eum expedita distinctio cupiditate error
             quod cumque praesentium aperiam fugiat libero accusamus?
           </p>
-          <h5 class="fw-bold">Join the best food of week</h5>
-          <div class="mt-4">
+          <h5 class="fw-bold mb-4">Join the best food of week</h5>
+          <div class="">
             <a href="#" class="btn btn-primary me-2">
               <i class="bi bi-cart-plus"></i>
             </a>
@@ -69,34 +69,101 @@
         </div>
         <div class="col col-lg-6">
           <div class="text-end top_down">
-            <img src="./img/home.png" alt="Plate of Salad" height="450" />
+            <img src="./img/home.png" alt="Plate of Salad" class="img" />
           </div>
         </div>
       </div>
     </section>
-    <section class="container min-vh-100">
-      <div class="row align-items-center">
-        <div class="col-12 col-lg-6">
-          <div class="top_down">
-            <img src="./img/about.jpg" alt="Photo of receipe" height="450" />
+    <section class="bg-light" id="about">
+      <div class="container mt-5">
+        <div class="row   min-vh-100 align-items-center">
+          <div class="col-12 col-lg-6">
+            <div class="to-right">
+              <img src="./img/about.jpg" alt="Photo of receipe" class="w-100" />
+            </div>
           </div>
-        </div>
-        <div class="col-12 col-lg-6">
-          <div class="p-4 top_down">
-            <p class="small text-primary fw-bold">About Us</p>
-            <h1 class="display-4 fw-bold text-primary mb-2">
-              We cook the best tasty food
-            </h1>
-            <p class="text-black-50 small">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
-              eveniet facere tempore aut quisquam in corporis minus magni
-              molestiae vel veritatis autem ab, sit quia est! Voluptatibus
-              adipisci facere voluptatum!
-            </p>
-            <button class="btn btn-primary">Submit</button>
+          <div class="col-12 col-lg-6">
+            <div class="to-left ps-4">
+              <p class="small text-primary fw-light mb-1">About Us</p>
+              <h1 class="display-5 fw-bold text-primary mb-4">
+                We cook the best tasty food
+              </h1>
+              <p class="text-black-50 small mb-4">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+                eveniet facere tempore aut quisquam in corporis minus magni
+                molestiae vel veritatis autem ab, sit quia est! Voluptatibus
+                adipisci facere voluptatum!
+              </p>
+              <button class="btn btn-primary">Explorer History</button>
+            </div>
           </div>
         </div>
       </div>
+    </section>
+    <section class="container " id="menu">
+        <div class="min-vh-100 row justify-content-center align-items-center ">
+          <div class="col-12">
+            <div class=" text-center">
+              <p class="small text-primary fw-bold mb-2">Special</p>
+              <h5 class="fw-bold">Menu of the Week</h5>
+            </div>
+          </div>
+          <div class="col-3">
+            <div class="card_border p-3">
+              <div class=" text-center mb-5">
+                <img src="./img/plate1.png" alt="berbecue salad" class="w-75 card_img">
+              </div>
+              <div>
+                <h5 class=" fw-bold">Barbecue Salad</h5>
+                <p class="text-primary small">Special Delious Dish</p>
+              </div>
+              <div class=" d-flex justify-content-between align-items-center">
+                <p class="fw-bold mb-0">$22.2</p>
+                <a href="#" class="btn btn-primary">
+                  <i class="bi bi-cart-plus"></i>
+                </a>
+              </div>
+            </div>
+           
+          </div>
+          <div class="col-3">
+            <div class="card_border p-3">
+              <div class=" text-center mb-5">
+                <img src="./img/plate2.png" alt="berbecue salad" class="w-75 card_img">
+              </div>
+              <div>
+                <h5 class=" fw-bold">Salad with Fish</h5>
+                <p class="text-primary small">Special Delious Dish</p>
+              </div>
+              <div class=" d-flex justify-content-between align-items-center">
+                <p class="fw-bold mb-0">$30.8</p>
+                <a href="#" class="btn btn-primary">
+                  <i class="bi bi-cart-plus"></i>
+                </a>
+              </div>
+            </div>
+           
+          </div>
+          <div class="col-3">
+            <div class="card_border p-3">
+              <div class=" text-center mb-5">
+                <img src="./img/plate3.png" alt="berbecue salad" class="w-75 card_img">
+              </div>
+              <div>
+                <h5 class=" fw-bold">Spanish Salad</h5>
+                <p class="text-primary small">Special Delious Dish</p>
+              </div>
+              <div class=" d-flex justify-content-between align-items-center">
+                <p class="fw-bold mb-0">$21</p>
+                <a href="#" class="btn btn-primary">
+                  <i class="bi bi-cart-plus"></i>
+                </a>
+              </div>
+            </div>
+           
+          </div>
+        </div>
+     
     </section>
     <script type="module" src="/main.js"></script>
   </body>
