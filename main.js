@@ -1,5 +1,5 @@
 import "./style.scss";
-import "waypoints/lib/noframework.waypoints";
+// import "waypoints/lib/noframework.waypoints";
 import ScrollReveal from "scrollreveal";
 import Typed from "typed.js";
 
@@ -37,30 +37,55 @@ let toRight = {
 };
 ScrollReveal().reveal(".to-right", toRight);
 
-new Waypoint({
-  element: document.getElementById("home-content"),
-  handler: function (direction) {
-    let oldNavLink = document.querySelector(".nav-link.active");
-    if (oldNavLink != null) {
-      oldNavLink.classList.remove("active");
-    }
-    let currentNavLink = document.querySelector(`[href="#home"]`);
-    currentNavLink.classList.add("active");
+let menuRow = document.getElementById("menu_row");
+
+let menulists = [
+  {
+    title: "Barbecue Salad",
+    description: "Special Delious Dish",
+    price: 22.2,
+    currency: "$",
+    img: "./img/plate1.png",
   },
-  offset: "10%",
-});
+  {
+    title: "Salad with Fish",
+    description: "Special Delious Dish",
+    price: 30.8,
+    currency: "$",
+    img: "./img/plate2.png",
+  },
+  {
+    title: "Spanish Salad",
+    description: "Special Delious Dish",
+    price: 21,
+    currency: "$",
+    img: "./img/plate3.png",
+  },
+];
 
-let pages = ["about", "services", "menu", "contact"];
-
-pages.forEach((page) => {
-  new Waypoint({
-    element: document.getElementById(page),
-    handler: function (direction) {
-      let oldActiveLink = document.querySelector(".nav-link.active");
-      oldActiveLink.classList.remove("active");
-      let newActiveLink = document.querySelector(`[href="#${page}"]`);
-      newActiveLink.classList.add("active");
-    },
-    offset: "50%",
-  });
+menulists.forEach((menu) => {
+  let div = document.createElement("div");
+  div.classList.add("col-3", "top_down");
+  div.innerHTML = `
+  <div class="card_border p-3">
+            <div class="text-center mb-5">
+              <img
+                src="${menu.img}"
+                alt="berbecue salad"
+                class="w-75 card_img"
+              />
+            </div>
+            <div>
+              <h5 class="fw-bold">${menu.title}</h5>
+              <p class="text-primary small">${menu.description}</p>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <p class="fw-bold mb-0">${menu.currency}${menu.price}</p>
+              <a href="#" class="btn btn-primary">
+                <i class="bi bi-cart-plus"></i>
+              </a>
+            </div>
+          </div>
+  `;
+  menuRow.append(div);
 });
