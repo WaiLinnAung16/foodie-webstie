@@ -2,14 +2,28 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="img/icon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foodie website</title>
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://metatags.io/" />
+    <meta property="og:title" content="Foodie Website" />
+    <meta
+      property="og:description"
+      content="SWD Project form MMS-IT
+Using Boostrap,Scss"
+    />
+    <meta property="og:image" content="img/preview.png" />
   </head>
-  <body>
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#navbar"
+    tabindex="0"
+    data-bs-smooth-scroll="true"
+  >
     <nav
-      class="navbar navbar-expand-lg bg-white position-fixed w-100"
-      style="z-index: 1002; opacity: 99%"
+      class="navbar navbar-expand-lg bg-white position-fixed w-100 shadow"
+      style="z-index: 1002"
     >
       <div class="container">
         <a class="navbar-brand logo-container" href="#">
@@ -28,7 +42,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0">
+          <ul class="navbar-nav nav-pills ms-auto mb-2 mb-lg-0" id="navbar">
             <li class="nav-item">
               <a class="nav-link active" href="#home">Home</a>
             </li>
@@ -49,8 +63,9 @@
       </div>
     </nav>
     <section class="container" id="home">
+      <div class="py-5 py-md-0"></div>
       <div class="row justify-content-between align-items-center min-vh-100">
-        <div class="col col-lg-5 top_down">
+        <div class="col-12 col-lg-5 top_down">
           <div id="home-content">
             <h1 class="display-4 fw-bold text-primary mb-2">
               Tasty <span id="type"></span>
@@ -71,8 +86,8 @@
             </div>
           </div>
         </div>
-        <div class="col col-lg-6">
-          <div class="text-end top_down">
+        <div class="col-12 col-lg-6">
+          <div class="text-center text-md-end top_down">
             <img src="./img/home.png" alt="Plate of Salad" class="img" />
           </div>
         </div>
@@ -112,7 +127,7 @@
         </div>
         <div class="my-3 py-5"></div>
         <div class="row justify-content-center">
-          <div class="col-3 top_down">
+          <div class="col-12 col-lg-3 mb-5 mb-md-0 top_down">
             <div class="text-center">
               <div class="mb-3">
                 <img
@@ -130,7 +145,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 top_down">
+          <div class="col-12 col-lg-3 mb-5 mb-md-0 top_down">
             <div class="text-center">
               <div class="mb-3">
                 <img
@@ -148,7 +163,7 @@
               </div>
             </div>
           </div>
-          <div class="col-3 top_down">
+          <div class="col-12 col-lg-3 mb-5 mb-md-0 top_down">
             <div class="text-center">
               <div class="mb-3">
                 <img
@@ -183,12 +198,12 @@
       <div class="py-5 my-5"></div>
 
       <div class="row justify-content-center align-items-center">
-        <div class="col-5">
+        <div class="col-12 col-lg-5">
           <div class="text-center to-right">
             <img src="./img/movil-app.png" alt="moblie app" height="500" />
           </div>
         </div>
-        <div class="col-4">
+        <div class="col-12 col-lg-4">
           <div class="to-left ps-4">
             <p class="small text-primary fw-bold mb-2">Application</p>
             <h4 class="fw-bold">App is now available</h4>
@@ -214,7 +229,7 @@
     <footer class="bg-light" id="contact">
       <div class="container">
         <div class="row justify-content-center align-items-end py-5">
-          <div class="col-6">
+          <div class="col-12 col-lg-6">
             <div>
               <p class="small text-primary fw-bold mb-2">Let's Talk</p>
               <h4 class="fw-bold">Contact Us</h4>
@@ -226,17 +241,17 @@
               </p>
             </div>
           </div>
-          <div class="col-4 text-center">
+          <div class="col-12 col-lg-4 mt-5 mt-lg-0 text-center">
             <button class="btn btn-primary">Contact Us Now</button>
           </div>
         </div>
         <hr />
         <div class="row justify-content-evenly py-5">
-          <div class="col-2">
+          <div class="col-12 col-lg-2 mb-4 mb-lg-0">
             <h4 class="fw-bold">Tasty Food</h4>
             <p class="text-black-50 small mb-0">Social Links</p>
           </div>
-          <div class="col-2">
+          <div class="col-12 col-lg-2 mb-4 mb-lg-0">
             <div class="">
               <p class="fw-bolder">Services</p>
               <ul class="m-0 p-0">
@@ -247,7 +262,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-12 col-lg-2 mb-4 mb-lg-0">
             <div class="">
               <p class="fw-bolder">Pages</p>
               <ul class="m-0 p-0">
@@ -258,7 +273,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-2">
+          <div class="col-12 col-lg-2 mb-4 mb-lg-0">
             <div>
               <p class="fw-bold">Information</p>
               <p>

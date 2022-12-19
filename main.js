@@ -1,5 +1,6 @@
 import "./style.scss";
 // import "waypoints/lib/noframework.waypoints";
+import "bootstrap/dist/js/bootstrap.bundle";
 import ScrollReveal from "scrollreveal";
 import Typed from "typed.js";
 
@@ -65,7 +66,7 @@ let menulists = [
 
 menulists.forEach((menu) => {
   let div = document.createElement("div");
-  div.classList.add("col-3", "top_down");
+  div.classList.add("col-12", "col-lg-3", "mb-5", "top_down");
   div.innerHTML = `
   <div class="card_border p-3">
             <div class="text-center mb-5">
